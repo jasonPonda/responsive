@@ -1,0 +1,40 @@
+body {
+    background-color: red;
+}
+
+.flex {
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 300px) {
+    body {
+        background-color: red;
+    }
+
+    div#small {
+       visibility: visible;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 300px) {
+    body {
+        background-color: green;
+    }
+    div#medium { 
+        display: flex;
+        flex-wrap: wrap;
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+    }
+    div#large {
+        visibility: visible;
+    }
+}
